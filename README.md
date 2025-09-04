@@ -1,5 +1,56 @@
-A Gesture-Based Gaming ControllerGesto-Game is a Python script that turns your webcam into a virtual controller, allowing you to play games using natural hand gestures. By leveraging computer vision, it detects specific hand poses and translates them into keyboard presses and mouse clicks, offering a unique and engaging way to interact with your PC.The project is built with the cvzone library for hand detection and pynput for controlling the keyboard and mouse. It’s perfect for anyone interested in exploring the intersection of computer vision and gaming.FeaturesGesture-to-Key Mapping: Control your games with intuitive hand movements.Dynamic Control: Press and hold keys for continuous movement.Mouse Click: Perform left mouse clicks with a simple fist gesture.Graceful Exit: A specific hand gesture allows you to exit the program cleanly.PrerequisitesBefore you can run the script, make sure you have Python installed on your system. You will also need the following libraries:opencv-pythoncvzonepynputInstallationYou can install the required libraries using pip:pip install opencv-python
-pip install cvzone
-pip install pynput
-UsageClone this repository or copy the code into a local file (e.g., gesto_game.py).Open your command line or terminal.Navigate to the directory where you saved the file.Run the script:python gesto_game.py
-Allow camera access. The script will start detecting your hand and the corresponding actions will be triggered.Gesture GuideGestureActionIndex Finger UpPress and hold WIndex + Middle Finger UpPress and hold SThumb UpPress and hold AIndex + Middle + Ring Finger UpPress and hold DFist (all fingers down)Left mouse clickOpen Palm (all fingers up)Exit the programContributingFeel free to fork the repository and contribute! Whether it's adding new gestures, optimizing performance, or fixing bugs, all contributions are welcome.LicenseThis project is licensed under the MIT License.
+Hand Gesture Game Controller
+
+This project allows you to control games such as CS2 using hand gestures detected through your webcam. It uses OpenCV, cvzone’s HandTrackingModule, and pynput to map hand gestures to keyboard and mouse inputs.
+
+Features
+
+Detects hand gestures via webcam.
+
+Maps gestures to keyboard inputs for controlling movement.
+
+Supports mouse clicks for in-game actions.
+
+Exit gesture to close the program safely.
+
+Gesture Mappings
+Gesture	Action
+Index finger up	Press and hold W
+Index and middle fingers up	Press and hold S
+Thumb up	Press and hold A
+Index, middle, and ring up	Press and hold D
+Fist (all fingers down)	Left mouse click
+Open palm (all fingers up)	Exit the program
+Requirements
+
+Python 3.x
+
+OpenCV
+
+cvzone
+
+pynput
+
+Install dependencies with:
+
+pip install opencv-python cvzone pynput
+
+How to Run
+
+Clone this repository.
+
+Ensure your webcam is connected.
+
+Run the script:
+
+python hand_gesture_controller.py
+
+
+Use the defined hand gestures to control your game.
+
+Notes
+
+The detection works best in a well-lit environment.
+
+Some games may require running the script with administrator permissions to allow simulated key presses.
+
+Gesture recognition depends on webcam quality and hand visibility.
