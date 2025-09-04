@@ -1,0 +1,2 @@
+# HandGestureBasedGamingUsingOpenCV_Mediapipe-Pynput
+This script transforms your webcam into a gesture based controller for games. By leveraging computer vision and the cvzone library, it detects specific hand gestures like pointing an index finger or forming a fist to simulate keyboard presses (W, A, S, D) and mouse clicks. It's a fun way to play games or interact with your traditional keyboard. 
